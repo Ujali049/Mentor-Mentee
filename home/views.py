@@ -15,10 +15,10 @@ def mentee_reg(request):   # for mentee registration
 
 def about(request):
     return render(request,"about.html")
-def portfolio(request):
-    return render(request,"portfolio.html")
-def portfolio_details(request):
-    return render(request,"portfolio-details.html")
+def projects(request):
+    return render(request,"projects.html")
+def projects_details(request):
+    return render(request,"projects_details.html")
 def services(request):
     return render(request,"services.html")
 def blog(request):
@@ -26,4 +26,4 @@ def blog(request):
 def blog_details(request):
     return render(request,"blog-details.html")
 def contact(request):
-    return render(request,"blog-details.html")
+    return render(request,"contact.html")

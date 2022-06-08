@@ -28,7 +28,7 @@ urlpatterns = [
      path("blog",views.blog,name='index'),
      path("blog_details",views.blog_details,name='blog_details'),
      path("contact",views.contact,name='contact'),
-     path("portfolio",views.portfolio,name='portfolio'),
-     path("portfolio_details",views.portfolio_details,name='portfolio_details'),
+     path("projects",views.projects,name='projects'),
+     path("projects_details",views.projects_details,name='projects_details'),
      path("services",views.services,name='services')
 ]

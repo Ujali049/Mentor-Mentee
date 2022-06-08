@@ -5,13 +5,71 @@
 	<title>Mentee-Registration</title>
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
 	<!-- Font-->
 	<link rel="stylesheet" type="text/css" href="static/css/opensans-font.css">
 	<link rel="stylesheet" type="text/css" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="static/css/style1.css"/>
+
+	 <!-- Template Main CSS File for header -->
+  <link href="static/css/main.css" rel="stylesheet">
+
+   <!-- Vendor CSS Files for header-->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+
 </head>
 <body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color:#34495E;height:70px">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between" >
+
+      <a href="/index" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/images/img/logo.png" alt=""> -->
+        <h1 class="d-flex align-items-center">ICMR</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/index" class="active">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/blog">Jobs</a></li>
+          <li class="dropdown"><a href="/"><span>Register</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/sign">Log In</a></li>
+              <li class="dropdown"><a href="/"><span>Sign In</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/mentor_reg">As Mentor</a></li>
+                  <li><a href="/mentee_reg">As Mentee</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
 	<div class="page-content">
 		<div class="form-v1-content">
 			<div class="wizard-form">
@@ -80,15 +138,33 @@
 									<h3 class="heading">Education</h3>
 								</div>
 
-								<div class="form-row">
+								<!--<div class="form-row">
 									<div class="form-holder form-holder-2">
-										<input type="text" class="form-control input-border" id="Institute" name="Institute" placeholder="Institute" required>
+										<select name="Institute" id="Institute" required>
+											<option value="" disabled selected>Institute</option>
+											<option value="BTECH Computer Science">IIT Delhi</option>
+											<option value="BTECH Information Technology">DTU</option>
+											<option value="BTECH Artificial Intillengence">IGDTUW</option>
+											<option value="BTECH Electrical">NSUT</option>
+										</select>
+									</div>
+								</div>-->
+
+								<div class="form-row">
+									<div class="form-holder-2">
+										<select name="Institute" id="Institute" required>
+											<option value="" disabled selected>Institute</option>
+											<option value="BTECH Computer Science">IIT Delhi</option>
+											<option value="BTECH Information Technology">DTU</option>
+											<option value="BTECH Artificial Intillengence">IGDTUW</option>
+											<option value="BTECH Electrical">NSUT</option>
+										</select>
 									</div>
 								</div>
 
                                
 								
-								<div class="form-row">
+								<!--<div class="form-row">
 									<div class="form-holder form-holder-2">
 										<select name="Qualification" id="Qualification" required>
 											<option value="" disabled selected>Qualification</option>
@@ -98,6 +174,18 @@
 											<option value="BTECH Electrical">BTECH Electrical</option>
 										</select>
 									</div>
+								</div>-->
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<select name="Qualification" class="arrow down"id="Qualification" id="Qualification" required>
+											<option value="" disabled selected>Qualification</option>
+											<option value="BTECH Computer Science">BTECH Computer Science</option>
+											<option value="BTECH Information Technology">BTECH Information Technology</option>
+											<option value="BTECH Artificial Intillengence">BTECH Artificial Intillengence</option>
+											<option value="BTECH Electrical">BTECH Electrical</option>
+										</select>
+                                    </div>
 								</div>
 								
 
@@ -211,6 +299,90 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- ======= Footer ======= -->
+	 <footer id="footer" class="footer">
+    <div class="footer-content">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="/index" class="logo d-flex align-items-center">
+              <span>ICMR</span>
+            </a>
+            <p>
+            The Indian Council of Medical Research (ICMR), New Delhi, the apex body in India for the formulation, coordination and promotion of biomedical research, is one of the oldest medical research bodies in the world.
+            </p>
+            <div class="social-links d-flex  mt-3">
+              <a href="https://twitter.com/ICMRDELHI?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/ICMROrganisation" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/icmrorganisation/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/icmrorganization/?originalSubdomain=in" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="/">Home</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/about">About us</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/services">Services</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/services">Terms of service</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/services">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="/services">Become Mentor</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/services">Become Mentee</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/services">Job Vacancies</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/services">Scholarships</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/services">Mock Tests</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>V. Ramalingaswami Bhawan, P.O. Box No. 4911, Ansari Nagar, New Delhi - 110029, India</p>
+            <p><strong>Ph:</strong> 91-11-26588895 / 91-11-26588980, 91-11-26589794 / 91-11-26589336, 91-11-26588707</p>
+            <p><strong>Fax:</strong> 91-11-26588662</p>
+            <p><strong>Email:</strong>icmrhqds[at]sansad[dot]nic[dot]in </p> 
+            
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>ICMR</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="/" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+  
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="static/js/jquery-3.3.1.min.js"></script>
 	<script src="static/js/jquery.steps.js"></script>
